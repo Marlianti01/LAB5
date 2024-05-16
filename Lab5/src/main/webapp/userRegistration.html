@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .form-group{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="processUser.jsp" method="post">
+        <fieldset>
+            <legend>User Details</legend>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label>
+                <input type="radio" name="gender" value="female">
+                <label>Gender</label>
+            </div>
+            <div class="form-group">
+                <label>Type of User:</label>
+                <select name="type">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >Preferred Language:</label>
+                <input type="checkbox" name="lang" value="Malay">
+                <label>Malay</label>
+                <input type="checkbox" name="lang" value="English">
+                <label>English</label>
+                <input type="checkbox" name="lang" value="Mandarin">
+                <label>Mandarin</label>
+                <input type="checkbox" name="lang" value="Tamil">
+                <label>Tamil</label>
+            </div>
+            <input type="submit" name="Submit">
+        </fieldset>            
+        </form>
+
+    </body>
+</html>
